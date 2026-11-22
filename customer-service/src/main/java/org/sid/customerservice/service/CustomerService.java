@@ -23,7 +23,7 @@ public class CustomerService {
                 .orElseThrow(() -> new RuntimeException("Customer Not Found"));
     }
 
-    public Customer savecustomer(Customer customer){
+    public Customer saveCustomer(Customer customer){
         return customerRepository.save(customer);
     }
 }
